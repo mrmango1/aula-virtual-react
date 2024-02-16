@@ -133,6 +133,34 @@ declare namespace Demo {
         [key: string]: string | string[] | number | boolean | undefined | ProductOrder[] | InventoryStatus;
     };
 
+    type Profesor = {
+        id?: string;
+        cedula: string;
+        nombres: string;
+        apellidos?: string;
+        email?: string;
+        password?: string;
+        [key: string]: string | string[] | number | boolean | undefined;
+    };
+
+    type Estudiante = {
+        id?: string;
+        cedula: string;
+        nombres: string;
+        apellidos?: string;
+        email?: string;
+        password?: string;
+        [key: string]: string | string[] | number | boolean | undefined;
+    };
+
+    type Curso = {
+        id?: string | undefined;
+        nombreCurso: string;
+        profesor?: Profesor;
+        estudiante?: Estudiante;
+        [key: string]: string | string[] | number | boolean | undefined | Profesor | Estudiante;
+    };
+
     type ProductOrder = {
         id?: string;
         productCode?: string;

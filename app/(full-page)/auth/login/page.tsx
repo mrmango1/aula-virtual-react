@@ -30,9 +30,9 @@ const LoginPage = () => {
                 >
                     <div className="w-full surface-card py-8 px-5 sm:px-8" style={{ borderRadius: '53px' }}>
                         <div className="text-center mb-5">
-                            <img src="/demo/images/login/avatar.png" alt="Image" height="50" className="mb-3" />
-                            <div className="text-900 text-3xl font-medium mb-3">Welcome, Isabel!</div>
-                            <span className="text-600 font-medium">Sign in to continue</span>
+                            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="Image" height="50" className="mb-3" />
+                            <div className="text-900 text-3xl font-medium mb-3">Bienvenido!</div>
+                            <span className="text-600 font-medium">Logeate para continuar</span>
                         </div>
 
                         <div>
@@ -55,7 +55,7 @@ const LoginPage = () => {
                                     Forgot password?
                                 </a>
                             </div>
-                            <Button label="Sign In" className="w-full p-3 text-xl" onClick={() => router.push('/')}></Button>
+                            <Button label="Sign In" className="w-full p-3 text-xl" onClick={() => router.push('/management/subject')}></Button>
                         </div>
                     </div>
                 </div>
